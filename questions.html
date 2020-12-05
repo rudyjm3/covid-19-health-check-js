@@ -4,51 +4,91 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="stylesheet.css">
     <title>Covid Questioner</title>
   </head>
   <body>
-    <form class="" action="index.html" method="post">
-      <div class="">
-        <p>Do you have COVID-19?</p>
+    <form class="covid" action="index.html" method="post">
+      <div class="question-container">
+        <div class="question-box active">
+          <p>Do you have COVID-19?</p>
+          <p class="answer"></p>
+        </div>
+        <button type="button" name="button">Yes</button>
+        <button type="button" name="button">No</button>
+        <p class="back-text-inactive">Back</p>
+      </div>
+      <div class="question-container">
+        <div class="question-box">
+          <p>Did you take a COVID-19 test because you have been exposed to COVID-19 or feel ill/have symptoms, and you are still waiting for the test results?</p>
+          <p class="answer"></p>
+        </div>
         <button type="button" name="button">Yes</button>
         <button type="button" name="button">No</button>
         <p class="back-text">Back</p>
       </div>
-      <div class="">
-        <p>Did you take a COVID-19 test because you have been exposed to COVID-19 or feel ill/have symptoms, and you are still waiting for the test results?</p>
+      <div class="question-container">
+        <div class="question-box">
+          <p>Have you been in close contact (within 6 feet for 15 mins or more in a 24-hour period) with someone with COVID-19 in the past 14 days?</p>
+          <p class="answer"></p>
+        </div>
         <button type="button" name="button">Yes</button>
         <button type="button" name="button">No</button>
         <p class="back-text">Back</p>
       </div>
-      <div class="">
-        <p>Have you been in close contact (within 6 feet for 15 mins or more in a 24-hour period) with someone with COVID-19 in the past 14 days?</p>
+      <div class="question-container">
+        <div class="question-box">
+          <p class="list-question">Are you experiencing one or more of the following?</p>
+          <ul>
+            <li>Fever (100.4 or higher) or chills</li>
+            <li>Cough</li>
+            <li>Shortness of beath or difficulty breathing</li>
+            <li>Fatigue</li>
+            <li>Muscle or body aches</li>
+            <li>Headaches</li>
+            <li>New loss of taste or smell</li>
+            <li>Sore throat</li>
+            <li>Congestion/runny nose</li>
+            <li>Nausea or vomiting</li>
+            <li>Diarhea</li>
+          </ul>
+          <p class="answer"></p>
+        </div>
         <button type="button" name="button">Yes</button>
         <button type="button" name="button">No</button>
         <p class="back-text">Back</p>
       </div>
-      <div class="">
-        <p>Are you experiencing one or more of the following?</p>
-        <ul>
-          <li>Fever (100.4 or higher) or chills</li>
-          <li>Cough</li>
-          <li>Shortness of beath or difficulty breathing</li>
-          <li>Fatigue</li>
-          <li>Muscle or body aches</li>
-        </ul>
+      <div class="question-container">
+        <div class="question-box">
+          <p>Will you follow social distancing protocols, wear your mask correctly (over your nose and mouth) and consistent to policy, wash your hands frequently while at work?</p>
+          <p class="answer"></p>
+        </div>
         <button type="button" name="button">Yes</button>
         <button type="button" name="button">No</button>
         <p class="back-text">Back</p>
       </div>
-      <div class="">
-        <p>Do you have COVID-19?</p>
-        <button type="button" name="button">Yes</button>
-        <button type="button" name="button">No</button>
-        <p class="back-text">Back</p>
-      </div>
-      <div class="">
-        <button type="button" name="button">Submit</button>
+      <div class="submit-container">
+        <div class="alert">
+          <p class="passed-alert-text"><span class="icon"><i class="fas fa-exclamation-triangle"></i></span>You must click <span>Submit</span> to complete this questionnaire.</p>
+          <div class="icon-box">
+            <i class="fas fa-exclamation-triangle"></i>
+          </div>
+          <div class="failed-alert-text">
+            <ol>
+              <li>You <span style="font-weight: bold;">Did Not Pass</span> the Health Check.</li>
+              <li>Click <span style="font-weight: bold;">Submit</span> below, and then notify the appropriate leader, following your standard call-out procedures, that you didn’t pass the health check and will not be coming onsite today. </li>
+              <li>Your leader will review any time-off benefits that may be available to you. </li>
+              <li>View <span style="font-weight: bold;">Did Not Pass</span> actions at <span style="font-weight: bold;">livetheorangelife.com/hc</span>.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="submit-btns">
+          <button type="button" name="button" class="submit-btn">Submit</button>
+          <button type="button" name="button">Start Over</button>
+          <p class="back-text">Back</p>
+        </div>
       </div>
     </form>
 
