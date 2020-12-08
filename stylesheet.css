@@ -133,6 +133,28 @@ ul {
 ol {
   list-style: decimal;
 }
+/*=========== Styling for submit section ==================*/
+/* =====FORM SUBMITTED ===========*/
+.submit-container .success-message{
+	background: #00bf06;
+	box-sizing: border-box;
+	padding: 15px;
+	color: white;
+}
+.submit-container .success-message .icon-box-green{
+	display: inline-block;
+	width: 10%;
+	float:left;
+	font-size: 25px;
+}
+.submit-container .success-message .icon-box-green i{
+	margin-top: 10px;
+}
+.submit-container .success-message .success-text span{
+	font-weight: 700;
+}
+/* =====END FORM SUBMITTED ===========*/
+/* ======START PASSED ALERT STYLING =============*/
 .submit-container .alert{
 	box-sizing: border-box;
 	padding: 15px;
@@ -152,10 +174,9 @@ ol {
 .submit-container .alert span{
 	font-weight: 800;
 }
+/* ======END PASSED ALERT STYLING =============*/
 
-/*.submit-container button{
-	margin: 10px 0;
-}*/
+/* ======START FAILED ALERT STYLING =============*/
 .icon-box{
 	display: inline-block;
 	width: 10%;
@@ -172,6 +193,8 @@ ol {
 	width: 80%;
 	font-weight: 600;
 }
+/* ======END FAILED ALERT STYLING =============*/
+/* ======START STYLING FOR SUBMIT BUTTONS ================*/
 .submit-container .submit-btns{
 	display: flex;
 	align-items: center;
@@ -188,3 +211,11 @@ ol {
 	margin-bottom: 15px;
 	width: 30%;
 }
+/* ======END STYLING FOR SUBMIT BUTTONS ================*/
+/* ============= Answered Question Styling ================*/
+.answered{
+	border-left: 4px solid #999999;
+	color: #999999;
+	background: #ededed;
+}
+/*=========== END Styling for submit section ==================*/
