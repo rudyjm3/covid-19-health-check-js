@@ -75,7 +75,7 @@ header{
 	margin-left: 20px;
 }
 /*============== END HEADER STYLING =====================*/
-.covid{
+#covid{
 	max-width: 460px;
 	position: relative;
 	display: block;
@@ -238,10 +238,11 @@ ol {
 	width: 30%;
 }
 /* ======END STYLING FOR SUBMIT BUTTONS ================*/
-/* ============= Answered Question Styling ================*/
+/* ============= START Answered Question Styling ================*/
 .answered{
 	border-left: 4px solid #999999;
 	color: #999999;
 	background: #ededed;
 }
+/* ============= END Answered Question Styling ================*/
 /*=========== END Styling for submit section ==================*/

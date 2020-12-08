@@ -19,19 +19,19 @@
         <h2>Health Check</h2>
       </div>
     </header>
-    <form class="covid" action="index.html" method="post">
+    <form id="covid" action="index.html" method="post">
       <!-- QUESTION ONE  -------------------------------->
       <div class="question-container">
         <div class="question-box active">
           <p>Do you have COVID-19?</p>
-          <p class="answer"></p>
+          <p id="answer"></p>
         </div>
-        <button type="button" name="button" value="Yes" form="covid" onclick="testFunction()">Yes</button>
-        <button type="button" name="button">No</button>
+        <button id="yes-btn" type="button" name="button" value="Yes" form="covid" onclick="answerDisplay(this.value)">Yes</button>
+        <button id="no-btn" type="button" name="button" value="No" form="covid" onclick="answerDisplay(this.value)">No</button>
         <p class="back-text-inactive">Back</p>
       </div>
       <!-- QUESTION TWO  -------------------------------->
-      <div class="question-container q-two">
+      <div class="question-container">
         <div class="question-box answered">
           <p>Did you take a COVID-19 test because you have been exposed to COVID-19 or feel ill/have symptoms, and you are still waiting for the test results?</p>
           <p class="answer"></p>
