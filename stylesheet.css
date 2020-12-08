@@ -44,14 +44,41 @@ table {
 
 /* =============== Styling =============================*/
 body {
-  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
+	font-family: 'Roboto', sans-serif;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: column;
 	background: #f6f6f6;
 }
+
+/*============== START HEADER STYLING =====================*/
+header{
+	background: #333;
+	width: 100%;
+	padding: 5px;
+}
+.logo-container img{
+	display: inline-block;
+	float:left;
+	width: 85px;
+	border: 2px solid white;
+	margin-left: 5px;
+}
+.header-text h2{
+	display: inline-block;
+	color: white;
+	position: relative;
+	top: 28px;
+	font-size: 30px;
+	margin-left: 20px;
+}
+/*============== END HEADER STYLING =====================*/
 .covid{
 	max-width: 460px;
+	position: relative;
+	display: block;
 }
 .question-container{
 	margin-bottom: 5px;
@@ -120,8 +147,8 @@ button:focus{
 	font-size: 20px;
 	font-weight: 600;
 	color: orange;
+	text-decoration: none;
 }
-
 .list-question{
 	margin-bottom: 15px;
 }
@@ -129,7 +156,6 @@ ul {
 	list-style: disc;
 	margin-left: 25px;
 }
-
 ol {
   list-style: decimal;
 }

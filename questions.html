@@ -5,30 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="stylesheet.css">
     <title>Covid Questioner</title>
   </head>
   <body>
+    <header>
+      <div class="logo-container">
+        <img src="img/Home-Depot-Logo-500x500-400x400.png" alt="company logo">
+      </div>
+      <div class="header-text">
+        <h2>Health Check</h2>
+      </div>
+    </header>
     <form class="covid" action="index.html" method="post">
+      <!-- QUESTION ONE  -------------------------------->
       <div class="question-container">
         <div class="question-box active">
           <p>Do you have COVID-19?</p>
           <p class="answer"></p>
         </div>
-        <button type="button" name="button">Yes</button>
+        <button type="button" name="button" value="Yes" form="covid" onclick="testFunction()">Yes</button>
         <button type="button" name="button">No</button>
         <p class="back-text-inactive">Back</p>
       </div>
-      <div class="question-container">
+      <!-- QUESTION TWO  -------------------------------->
+      <div class="question-container q-two">
         <div class="question-box answered">
           <p>Did you take a COVID-19 test because you have been exposed to COVID-19 or feel ill/have symptoms, and you are still waiting for the test results?</p>
           <p class="answer"></p>
         </div>
         <button type="button" name="button">Yes</button>
         <button type="button" name="button">No</button>
-        <p class="back-text">Back</p>
+        <a href="#"class="back-text">Back</a>
       </div>
+      <!-- QUESTION THREE  -------------------------------->
       <div class="question-container">
         <div class="question-box">
           <p>Have you been in close contact (within 6 feet for 15 mins or more in a 24-hour period) with someone with COVID-19 in the past 14 days?</p>
@@ -38,6 +50,7 @@
         <button type="button" name="button">No</button>
         <p class="back-text">Back</p>
       </div>
+      <!-- QUESTION FOUR  -------------------------------->
       <div class="question-container">
         <div class="question-box">
           <p class="list-question">Are you experiencing one or more of the following?</p>
@@ -60,6 +73,7 @@
         <button type="button" name="button">No</button>
         <p class="back-text">Back</p>
       </div>
+      <!-- QUESTION SIX  -------------------------------->
       <div class="question-container">
         <div class="question-box">
           <p>Will you follow social distancing protocols, wear your mask correctly (over your nose and mouth) and consistent to policy, wash your hands frequently while at work?</p>
@@ -93,12 +107,16 @@
         </div>
         </div>
         <div class="submit-btns">
-          <button type="button" name="button" class="submit-btn">Submit</button>
-          <button type="button" name="button">Start Over</button>
+          <button type="submit" name="button" class="submit-btn">Submit</button>
+          <button type="reset" name="button">Start Over</button>
           <p class="back-text">Back</p>
         </div>
       </div>
     </form>
 
+
+<script type="text/javascript" src="main.js">
+
+</script>
   </body>
 </html>
