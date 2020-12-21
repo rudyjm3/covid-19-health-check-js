@@ -21,24 +21,26 @@
     </header>
     <form id="covid" action="index.html" method="post">
       <!-- QUESTION ONE  -------------------------------->
-      <div class="question-container">
-        <div class="question-box active">
+      <div class="question-container active-container">
+        <div class="question-box active-question">
           <p>Do you have COVID-19?</p>
           <p id="answer"></p>
         </div>
-        <button id="yes-btn" type="button" name="button" value="Yes" form="covid" onclick="answerDisplay(this.value)">Yes</button>
-        <button id="no-btn" type="button" name="button" value="No" form="covid" onclick="answerDisplay(this.value)">No</button>
-        <p class="back-text-inactive">Back</p>
+        <div class="buttons-group">
+          <button id="yes-btn" type="button" name="button" value="Yes" form="covid" onclick="answerDisplay(this.value)">Yes</button>
+          <button id="no-btn" type="button" name="button" value="No" form="covid" onclick="answerDisplay(this.value)">No</button>
+          <button id="back-btn" type="button" name="back-button" class="back-btn-inactive" form="covid" onclick="()">Back</button>
+        </div>
       </div>
       <!-- QUESTION TWO  -------------------------------->
-      <div class="question-container">
-        <div class="question-box answered">
+      <div class="question-container answered-container">
+        <div class="question-box answered-question">
           <p>Did you take a COVID-19 test because you have been exposed to COVID-19 or feel ill/have symptoms, and you are still waiting for the test results?</p>
-          <p class="answer"></p>
+          <p class="answer">(Sample respones Yes/No)</p>
         </div>
         <button type="button" name="button">Yes</button>
         <button type="button" name="button">No</button>
-        <a href="#"class="back-text">Back</a>
+        <button type="button" name="back-button" class="back-btn-active" form="covid" onclick="()">Back</button>
       </div>
       <!-- QUESTION THREE  -------------------------------->
       <div class="question-container">
@@ -48,7 +50,7 @@
         </div>
         <button type="button" name="button">Yes</button>
         <button type="button" name="button">No</button>
-        <p class="back-text">Back</p>
+        <button type="button" name="back-button" class="back-btn-active" form="covid" onclick="()">Back</button>
       </div>
       <!-- QUESTION FOUR  -------------------------------->
       <div class="question-container">
@@ -71,7 +73,7 @@
         </div>
         <button type="button" name="button">Yes</button>
         <button type="button" name="button">No</button>
-        <p class="back-text">Back</p>
+        <button type="button" name="back-button" class="back-btn-active" form="covid" onclick="()">Back</button>
       </div>
       <!-- QUESTION SIX  -------------------------------->
       <div class="question-container">
@@ -81,7 +83,7 @@
         </div>
         <button type="button" name="button">Yes</button>
         <button type="button" name="button">No</button>
-        <p class="back-text">Back</p>
+        <button type="button" name="back-button" class="back-btn-active" form="covid" onclick="()">Back</button>
       </div>
       <!-- SUBMIT SECTION ------------------------>
       <div class="submit-container">
@@ -108,8 +110,8 @@
         </div>
         <div class="submit-btns">
           <button type="submit" name="button" class="submit-btn">Submit</button>
-          <button type="reset" name="button">Start Over</button>
-          <p class="back-text">Back</p>
+          <button type="reset" name="button" class="clear-btn">Start Over</button>
+          <button type="button" name="back-button" class="back-btn-active" form="covid" onclick="()">Back</button>
         </div>
       </div>
     </form>

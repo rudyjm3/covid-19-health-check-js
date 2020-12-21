@@ -91,7 +91,10 @@ header{
 	padding: 15px;
 	background: white;
 }
-.active{
+.active-container{
+
+}
+.active-question{
 	border-left: 4px solid orange;
 }
 .question-container button:nth-of-type(1){
@@ -125,29 +128,47 @@ button:after {
   margin-left: -20px!important;
   margin-top: -120%;
   opacity: 0;
-  transition: all 0.8s
+  transition: all 0.8s;
 }
 button:active:after {
   padding: 0;
   margin: 0;
   opacity: 1;
-  transition: 0s
+  transition: 0s;
 }
 button:focus{
 	outline: none;
 }
-.back-text-inactive{
-	display: inline-block;
+.back-btn-inactive{
+	position: relative;
 	font-size: 20px;
 	font-weight: 600;
 	color: #999999;
+	background: none;
+	border: none;
+	outline: none;
+	box-shadow: none;
+	width: fit-content;
 }
-.back-text{
-	display: inline-block;
+/*=== RECHECK below line LATER ON REMOVING BULE BACKGROUND WHEN BUTTON CLICKED IN RESPONSIVE VIEW =======*/
+.back-btn-inactive::after{
+	-webkit-tap-highlight-color: transparent;
+	transition: all 0s;
+}
+.back-btn-active{
+	position: relative;
 	font-size: 20px;
 	font-weight: 600;
 	color: orange;
-	text-decoration: none;
+	background: none;
+	border: none;
+	outline: none;
+	box-shadow: none;
+	width: fit-content;
+}
+.back-btn-active::after{
+	-webkit-tap-highlight-color: transparent;
+	transition: all 0s;
 }
 .list-question{
 	margin-bottom: 15px;
@@ -159,7 +180,18 @@ ul {
 ol {
   list-style: decimal;
 }
-/*=========== Styling for submit section ==================*/
+/*========= START STYLING FOR QUESTIONS ANSWERED (CONTAINER) =========*/
+.answered-question{
+	border-left: 4px solid #999999;
+	color: #999999;
+	background: #ededed;
+}
+.buttons-group-answered{
+	display: none;
+}
+/*========= END STYLING FOR QUESTIONS ANSWERED (CONTAINER) =========*/
+
+/*=========== START STYLING FOR SUBMIT SECTION ==================*/
 /* =====FORM SUBMITTED ===========*/
 .submit-container .success-message{
 	background: #00bf06;
@@ -201,7 +233,6 @@ ol {
 	font-weight: 800;
 }
 /* ======END PASSED ALERT STYLING =============*/
-
 /* ======START FAILED ALERT STYLING =============*/
 .icon-box{
 	display: inline-block;
@@ -231,18 +262,12 @@ ol {
 	color: white;
 }
 
-.submit-container .submit-btns button{
+.submit-container .submit-btns .submit-btn, .clear-btn{
 	margin-right: 15px;
 	margin-top: 15px;
 	margin-bottom: 15px;
-	width: 30%;
+	width: 35%;
 }
 /* ======END STYLING FOR SUBMIT BUTTONS ================*/
-/* ============= START Answered Question Styling ================*/
-.answered{
-	border-left: 4px solid #999999;
-	color: #999999;
-	background: #ededed;
-}
-/* ============= END Answered Question Styling ================*/
-/*=========== END Styling for submit section ==================*/
+
+/*=========== END STYLING FOR SUBMIT SECTION ==================*/
